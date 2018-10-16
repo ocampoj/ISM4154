@@ -4,7 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -425,6 +425,12 @@ hr {
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.centeredBorderLine {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 2px solid black;
 }
 
 small,
@@ -3889,8 +3895,8 @@ tbody.collapse.show {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
+  background-color: black;
+  border-color:   black;
 }
 
 .nav-tabs .dropdown-menu {
@@ -4043,6 +4049,7 @@ tbody.collapse.show {
   content: "";
   background: no-repeat center center;
   background-size: 100% 100%;
+ 
 }
 
 @media (max-width: 575.98px) {
@@ -4052,7 +4059,7 @@ tbody.collapse.show {
     padding-left: 0;
   }
 }
-
+/* added a border here  */
 @media (min-width: 576px) {
   .navbar-expand-sm {
     -webkit-box-orient: horizontal;
@@ -4062,6 +4069,11 @@ tbody.collapse.show {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    border-bottom:.1rem solid #ddd;
+    z-index:500;
+    position: relative;
+    height: 7rem;
+    margin-top: 2.5%;
   }
   .navbar-expand-sm .navbar-nav {
     -webkit-box-orient: horizontal;
@@ -4109,6 +4121,7 @@ tbody.collapse.show {
   }
 }
 
+
 @media (min-width: 768px) {
   .navbar-expand-md {
     -webkit-box-orient: horizontal;
@@ -4119,6 +4132,8 @@ tbody.collapse.show {
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
+
+
   .navbar-expand-md .navbar-nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -4162,6 +4177,20 @@ tbody.collapse.show {
   .navbar-expand-lg > .container-fluid {
     padding-right: 0;
     padding-left: 0;
+  }
+}
+
+ 
+@media screen and (max-width:991px) {
+  #logo {
+      top: .9rem;
+      width: 10rem;
+      height: 4.6rem;
+  }
+
+  #logo svg {
+      width: 8rem;
+      height: 2.6rem;
   }
 }
 
@@ -4336,9 +4365,9 @@ tbody.collapse.show {
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
   color: rgba(0, 0, 0, 0.9);
 }
-
+/* changed the color of the links on the nav  */
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
+  color:black;
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
@@ -4357,8 +4386,8 @@ tbody.collapse.show {
 }
 
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.1);
+  color: black;
+   
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -4378,15 +4407,15 @@ tbody.collapse.show {
 }
 
 .navbar-dark .navbar-brand {
-  color: black;
+  color:#000;
 }
 
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: black;
+  color: #fff;
 }
-/*This changes the color of the text in the nav bar*/
+
 .navbar-dark .navbar-nav .nav-link {
-  color:black;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
@@ -4396,16 +4425,16 @@ tbody.collapse.show {
 .navbar-dark .navbar-nav .nav-link.disabled {
   color: rgba(255, 255, 255, 0.25);
 }
-/* This changes the color of which link is active! */
+
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: black;
+  color: #fff;
 }
 
 .navbar-dark .navbar-toggler {
-  color: black;
+  color: rgba(255, 255, 255, 0.5);
   border-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -4414,15 +4443,15 @@ tbody.collapse.show {
 }
 
 .navbar-dark .navbar-text {
-  color: black;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .navbar-dark .navbar-text a {
-  color: black;
+  color: #fff;
 }
 
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
-  color: black;
+  color: #fff;
 }
 
 .card {
@@ -4561,6 +4590,7 @@ tbody.collapse.show {
 .card-deck .card {
   margin-bottom: 15px;
 }
+ 
 
 @media (min-width: 576px) {
   .card-deck {
@@ -5143,6 +5173,7 @@ tbody.collapse.show {
   -webkit-animation: progress-bar-stripes 1s linear infinite;
   animation: progress-bar-stripes 1s linear infinite;
 }
+ 
 
 .media {
   display: -webkit-box;
@@ -6136,7 +6167,25 @@ button.bg-danger:focus {
 
 .bg-light {
   background-color: #f8f9fa !important;
+  
 }
+
+#logo {
+
+  position: absolute;
+  left: 50%;
+  display: block;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: -.8rem;
+  width: 6.1rem;
+  height: 5.3rem;
+  transition: transform .2s ease;
+  
+
+}
+ 
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
@@ -6145,11 +6194,8 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color:white !important;
-  border-bottom:.1rem solid #ddd;
-  z-index:500;
-  position: relative;
-  height: 4rem;
+  background-color: #343a40 !important;
+  
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -6269,12 +6315,6 @@ button.bg-dark:focus {
 .rounded-circle {
   border-radius: 50% !important;
 }
-.container #blackbra {
-width: 140%;
-height: 140%;
-
-}
-
 
 .rounded-0 {
   border-radius: 0 !important;
