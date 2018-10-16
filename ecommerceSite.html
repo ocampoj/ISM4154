@@ -12,50 +12,73 @@
       <a class="somalogoclass" href="#">  
           <img id="logo" src="./images/somalogo.png" > 
         </a>
-       <nav class="navbar navbar-expand-sm navbar-light" >
-          
-          <div class="container">
-             
-            <button  class="navbar-toggler ml-auto hidden-sm-up " type="button" data-toggle="collapse" data-target="#myTogglerNav" 
+        <a class="navbar-brand invisible" href="#">Navbar</a>
+        <nav class="navbar navbar-expand-md navbar-light ">
+             <!-- THIS IS THE ICON FOR THE SEARCH -->
+            <button  class="navbar-toggler ml-auto hidden-lg-up " type="button" data-toggle="collapse" data-target="#" 
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0
+                 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+                 <span class="mobile-label">SEARCH</span>
+            </button>  
+            <!-- THIS IS THE ICON FOR THE STORE -->
+            <button  class="navbar-toggler ml-auto hidden-lg-up " type="button" data-toggle="collapse" data-target="#" 
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  
-            <!-- <span class="navbar-toggler-icon"></span> -->
-            </button>
-                  
-    
-            <div class="collapse navbar-collapse " id="#myTogglerNav">
-              <ul class="navbar-nav  mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#" style="font-weight:bold" >SIGNATURE SERIES <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item" active>
-                  <a class="nav-link" href="#">NEW ARRIVALS</a>
-                </li>
-                <li class="nav-item" active>
-                    <a class="nav-link" href="#">BRAS</a>
-                </li>
-                <li class="nav-item" active>
-                    <a class="nav-link" href="#">PANTIES</a>
-                </li>
-                <li class="nav-item" active>
-                    <a class="nav-link" href="#">SLEEP</a>
-                </li>
-                <li class="nav-item" active>
-                    <a class="nav-link" href="#">APPAREL</a>
-                </li>
-                <li class="nav-item" active>
-                    <a class="nav-link" href="#">BRAS</a>
-                </li>
-                <li class="nav-item" active>
-                    <a class="nav-link" href="#" style="color: red;">SALE</a>
-                </li>
-              <form class="form-inline  my-lg-0">
-                <input class="form-control mr-sm-2 mr-3" type="search" placeholder="Search" aria-label="Search">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-bag" viewBox="0 0 407.5 611.3" width="30" height="30">
+              <path fill-rule="evenodd" d="M394.4 275L203.8 611.3l0 0 0 0L13.1 275C2.8 253.1 0 228 0 203.8 0 91.2 91.2 0 203.8 0s203.8 91.2 203.8 203.8C407.5 228 404.8 253.1
+               394.4 275zM203.8 101.9c-56.1 0-101.9 45.8-101.9 101.9s45.8 101.9 101.9 101.9 101.9-45.8 101.9-101.9S259.9 101.9 203.8 101.9z"/></svg>
+               <span class="mobile-label">STORES</span>
+          </button>
+           <!-- THIS IS THE ICON FOR THE BAG -->
+           <button  class="navbar-toggler ml-auto hidden-lg-up " type="button" data-toggle="collapse" data-target="#" 
+           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <svg xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-map" viewBox="0 0 30 33" width="30" height="30">
+             <path fill-rule="evenodd"  d="M30 11.4c0-0.3-0.2-0.5-0.5-0.5 0 0 0 0 0 0h-8.3 -0.1l-2.3-7.4c0-0.2-0.3-0.9-0.7-1.7 -0.7-1.1-1.7-1.8-2.8-1.8v0H15l0 0 0 0 -0.3 0v0c-1.1 0.1-2.1 0.7-2.8 1.8 -0.5 0.8-0.7
+              1.5-0.7 1.7l-2.3 7.4H8.7 0.5c0 0 0 0 0 0 -0.3 0-0.5 0.2-0.5 0.5 0 0 0 0 0 0.1l0 0 2.1 19.3c0 1.2 1 2.2 2.2 2.2H10h10 5.6c1.2 0 2.2-1 2.2-2.2L30 11.4 30 11.4C30 11.4 30 11.4 30 11.4zM13.1 4.1L13.1 
+              4.1c0-0.1 0.2-0.6 0.5-1.1 0.4-0.6 0.9-1 1.5-1 0.6 0 1.1 0.3 1.5 1 0.3 0.5 0.5 1 0.5 1.1l2.1 6.9H11L13.1 4.1z"/></svg>
+              <span class="mobile-label">BAG</span>
+         </button>
+          <!-- THIS IS THE ICON FOR THE MENU -->
+            <button class="navbar-toggler ml-auto hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> 
+                <span class="mobile-label">Menu</span>
+            </button> 
+              
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item  ">
+                      <a class="nav-link" href="#" style="font-weight:bold" >SIGNATURE SERIES <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item"  >
+                      <a class="nav-link" href="#">NEW ARRIVALS</a>
+                    </li>
+                    <li class="nav-item"  >
+                        <a class="nav-link" href="#">BRAS</a>
+                    </li>
+                    <li class="nav-item"  >
+                        <a class="nav-link" href="#">PANTIES</a>
+                    </li>
+                    <li class="nav-item"  >
+                        <a class="nav-link" href="#">SLEEP</a>
+                    </li>
+                    <li class="nav-item"  >
+                        <a class="nav-link" href="#">APPAREL</a>
+                    </li>
+                    <li class="nav-item"  >
+                        <a class="nav-link" href="#">BRAS</a>
+                    </li>
+                    <li class="nav-item"  >
+                        <a class="nav-link" href="#" style="color: red;">SALE</a>
+                    </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
               </form>
             </div>
-          </div>
-        </nav> 
+          </nav>
+    
   
     <div class="container mt-3">
       <div class="row">
