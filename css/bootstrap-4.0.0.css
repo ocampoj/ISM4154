@@ -2594,7 +2594,7 @@ fieldset:disabled a.btn {
 
 .btn-secondary:hover {
   color: #fff;
-  background-color: #f0e4d7;
+  background-color:#545b62 ;
   border-color: #545b62;
 }
 
@@ -2611,7 +2611,7 @@ fieldset:disabled a.btn {
 .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle {
   color: #fff;
-  background-color: #f0e4d7;
+  background-color: #0c0c0b;
   border-color: #4e555b;
 }
 
