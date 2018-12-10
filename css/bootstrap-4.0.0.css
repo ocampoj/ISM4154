@@ -6108,7 +6108,7 @@ button.close {
   margin-right: 3px;
   margin-left: 3px;
   text-indent: -999px;
-  background-color: rgba(216, 93, 144, 0.5);
+  background-color: rgba(148, 135, 140, 0.5);
 }
 
 .carousel-indicators li::before {
